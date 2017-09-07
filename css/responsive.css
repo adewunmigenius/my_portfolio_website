@@ -2,12 +2,23 @@
 	body{
 		background: #ddd;
 	}
+	/** Four column layout */
+	#languages li, #recent li{
+		width: 20%;
+	}
+	#languages li:nth-child(5n){
+		clear: left;
+	}
 	/*** THREE COLUMN LAYOUT ***/
 	#gallery li{
 		width: 28.3333%;
 	}
 	#gallery li:nth-child(4n){
 		clear: left;	
+	}
+	/* correcting float*/
+	#languages li:nth-child(3n), #gallery li:nth-child(3n),#languages li:nth-child(5n), #gallery li:nth-child(5n){
+		clear: none;
 	}
 	/*** Floating the profile photo to the left ***/
 	.profile-photo{
@@ -31,6 +42,15 @@
 	/*** FOUR COLUMN LAYOUT ***/
 	#wrapper{
 		max-width: 1200px;
+	}
+	#languages li{
+		width: 15%;
+	}
+	#languages li:nth-child(5n){
+		clear: none;	
+	}
+	#languages li:nth-child(6n){
+		clear: left;
 	}
 	#gallery li{
 		width: 20%;
