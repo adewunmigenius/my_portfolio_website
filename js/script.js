@@ -9,7 +9,7 @@ $overlay.append($caption);
 //Add overlay to body of app
 $('body').append($overlay);
 
-$('#gallery a').click(function(event){
+$('#languages a, #gallery a').click(function(event){
 	event.preventDefault();
 	//get anchor link href
 	var imglocation = $(this).attr('href');
